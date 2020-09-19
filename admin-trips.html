@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="styles/admin-styles.css" />
+    <link rel="stylesheet" href="styles/admin-pages-common-styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <title>Admin Portal Page 5</title>
+  </head>
+  <body>
+    <header class="admin-header">
+      <div class="header-div complaint-header-div text-right">
+        <span>
+          <span class="user-name-p">Dharam Lokhandvala</span>
+          <button class="btn-logout">Logout</button>
+        </span>
+      </div>
+    </header>
+    <div class="container-fluid trips-div-main div-main">
+        <div class="row main-card trips-card trips-col-12-card">
+    <div class="col-lg-4">
+      <div class="trips-div">
+          <div class="total-trips">
+            <div
+              class="card-text"
+              style="
+                padding-top: 30px;
+                font-size: 20px;
+                vertical-align: middle;
+                display: inline-block;
+              "
+            >
+              Total Trips
+            </div>
+            <div
+              class="trips-icon"
+              style="
+                padding-top: 30px;
+                margin-left: 10px;
+                vertical-align: middle;
+                display: inline-block;
+              "
+            >
+            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+            width="30" height="30"
+            viewBox="0 0 172 172"
+            style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g><path d="M17.91667,78.83333c7.16667,0 7.16667,-35.83333 53.75,-35.83333c46.58333,0 44.66983,33.28917 55.41983,36.8725v16.8775h-109.16983z" fill="#ffffff"></path><path d="M164.83333,111.97917c0,0 0,6.27083 -7.16667,6.27083c-10.75,0 -139.75,0 -139.75,0c-5.93758,0 -10.75,-4.816 -10.75,-10.75v-17.91667c0,0 0,-10.75 10.75,-10.75c14.33333,0 93.16667,0 93.16667,0c35.83333,0 53.75,14.33333 53.75,21.5z" fill="#ffffff"></path><path d="M146.91667,107.5c0,9.89358 -8.0195,17.91667 -17.91667,17.91667c-9.89717,0 -17.91667,-8.02308 -17.91667,-17.91667c0,-9.89358 8.0195,-17.91667 17.91667,-17.91667c9.89717,0 17.91667,8.02308 17.91667,17.91667M60.91667,107.5c0,9.89358 -8.02308,17.91667 -17.91667,17.91667c-9.89358,0 -17.91667,-8.02308 -17.91667,-17.91667c0,-9.89358 8.02308,-17.91667 17.91667,-17.91667c9.89358,0 17.91667,8.02308 17.91667,17.91667" fill="#455a64"></path><path d="M136.16667,107.5c0,3.95958 -3.20708,7.16667 -7.16667,7.16667c-3.95958,0 -7.16667,-3.20708 -7.16667,-7.16667c0,-3.95958 3.20708,-7.16667 7.16667,-7.16667c3.95958,0 7.16667,3.20708 7.16667,7.16667M50.16667,107.5c0,3.95958 -3.20708,7.16667 -7.16667,7.16667c-3.95958,0 -7.16667,-3.20708 -7.16667,-7.16667c0,-3.95958 3.20708,-7.16667 7.16667,-7.16667c3.95958,0 7.16667,3.20708 7.16667,7.16667" fill="#b0bec5"></path><g fill="#ffc107"><path d="M12.54167,89.58333h-5.375v14.33333h5.375c2.97058,0 5.375,-2.408 5.375,-5.375v-3.58333c0,-2.967 -2.40442,-5.375 -5.375,-5.375zM154.08333,88.35783v10.18383c0,2.967 2.408,5.375 5.375,5.375h5.375v-3.58333c0,-3.2035 -3.60125,-7.82958 -10.75,-11.9755z"></path></g><g fill="#660636"><path d="M115.842,78.83333c-1.04992,-1.634 -2.02458,-3.38625 -3.01358,-5.17792c-5.50042,-10.00108 -12.33383,-22.30983 -37.57842,-23.38125v28.55917zM68.08333,78.83333v-28.54842c-26.09025,1.204 -33.37158,15.351 -38.227,24.8755c-0.63425,1.23983 -1.27925,2.48325 -1.96725,3.67292z"></path></g></g></g></svg>
+            </div>
+          </div>
+          <div class="money-div">23,456</div>
+          <div class="radio-button-group">
+            <label class="radio-label radio-inline">
+              <input
+                type="radio"
+                name="trips-radio"
+                checked
+              />
+              Daily
+            </label>
+            <label class="radio-label radio-inline">
+              <input
+                type="radio"
+                name="trips-radio"
+              />
+              Weekly
+            </label>
+            <label class="radio-label radio-inline">
+              <input
+                type="radio"
+                name="trips-radio"
+              />
+              Monthly
+            </label>
+            <label class="radio-label radio-inline">
+              <input
+                type="radio"
+                name="trips-radio"
+              />
+              Yearly
+            </label>
+          </div>
+        </div>
+    </div>
+    <div class="col-lg-3">
+      <div class="cancelled-trips-card">
+          <div class="cancelled-trips-div">
+            <div
+              class="card-text"
+              style="
+                padding-top: 30px;
+                font-size: 20px;
+                vertical-align: middle;
+                display: inline-block;
+              "
+            >
+              Cancelled Trips
+              <img src="https://img.icons8.com/metro/20/ffffff/cancel.png" style="vertical-align: -2px;"/>
+            </div>
+          </div>
+          <div class="money-div complains-number">1422</div>
+          <div class="complains-sub-div">
+            By Driver: 222 <br />
+            By Customer: 1200
+          </div>
+      </div>
+    </div>
+      <div class="col-lg-4">
+          <div class="total-km-div">
+              <div class="total-trips">
+                <div
+                  class="card-text"
+                  style="
+                    padding-top: 30px;
+                    font-size: 20px;
+                    vertical-align: middle;
+                    display: inline-block;
+                  "
+                >
+                  Total Kilometers driven by all drivers
+                </div>
+              </div>
+              <div class="money-div">23,45,689</div>
+              <div class="radio-button-group">
+                <label class="radio-label radio-inline">
+                  <input
+                    type="radio"
+                    name="km-radio"
+                    checked
+                  />
+                  Daily
+                </label>
+                <label class="radio-label radio-inline">
+                  <input
+                    type="radio"
+                    name="km-radio"
+                  />
+                  Weekly
+                </label>
+                <label class="radio-label radio-inline">
+                  <input
+                    type="radio"
+                    name="km-radio"
+                  />
+                  Monthly
+                </label>
+                <label class="radio-label radio-inline">
+                  <input
+                    type="radio"
+                    name="km-radio"
+                  />
+                  Yearly
+                </label>
+              </div>
+            </div>
+    </div>
+</div>
+<div class="table-div">
+    <table class="table table-striped business-table">
+        <thead>
+          <tr>
+            <th scope="col">Trip ID</th>
+            <th scope="col">Pickup & Drop</th>
+            <th scope="col">Kilometers</th>
+            <th scope="col">Amount</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>ID123</td>
+            <td>Surat <img src="https://img.icons8.com/ios-filled/25/000000/long-arrow-right.png"/> ahmedabad</td>
+            <td>12</td>
+            <td>₹1235</td>
+          </tr>
+          <tr>
+            <td>ID943</td>
+            <td>Surat <img src="https://img.icons8.com/ios-filled/25/000000/long-arrow-left.png"/> ahmedabad</td>
+            <td>12</td>
+            <td>₹1235</td>
+          </tr>
+          <tr>
+            <td>ID555</td>
+            <td>Surat <img src="https://img.icons8.com/ios-filled/25/000000/long-arrow-left.png"/> ahmedabad</td>
+            <td>12</td>
+            <td>₹1235</td>
+          </tr>
+          <tr>
+            <td>ID123</td>
+            <td>Surat <img src="https://img.icons8.com/ios-filled/25/000000/long-arrow-right.png"/> ahmedabad</td>
+            <td>12</td>
+            <td>₹1235</td>
+          </tr>
+          <tr>
+            <td>ID123</td>
+            <td>Surat <img src="https://img.icons8.com/ios-filled/25/000000/long-arrow-right.png"/> ahmedabad</td>
+            <td>12</td>
+            <td>₹1235</td>
+          </tr>
+          <tr>
+            <td>ID123</td>
+            <td>Surat <img src="https://img.icons8.com/ios-filled/25/000000/long-arrow-left.png"/> ahmedabad</td>
+            <td>12</td>
+            <td>₹1235</td>
+          </tr>
+          <tr>
+            <td>ID123</td>
+            <td>Surat <img src="https://img.icons8.com/ios-filled/25/000000/long-arrow-right.png"/> ahmedabad</td>
+            <td>12</td>
+            <td>₹1235</td>
+          </tr>
+        </tbody>
+      </table>
+</div>
+</div>
+<button class="save-report-button">
+    <img src="https://img.icons8.com/metro/40/ffffff/pdf.png"/> <br>Report
+</button> 
+</body>
+</html>

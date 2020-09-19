@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="styles/admin-styles.css" />
+    <link rel="stylesheet" href="styles/admin-pages-common-styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <title>Admin Portal Page 2</title>
+  </head>
+  <body>
+    <header class="admin-header">
+      <div class="header-div business-header-div text-right">
+        <span>
+          <span class="user-name-p">Dharam Lokhandvala</span>
+          <button class="btn-logout">Logout</button>
+        </span>
+      </div>
+    </header>
+
+    <div class="container-fluid business-div-main div-main">
+        <div class="row main-card business-card">
+            <div class="col-lg-4">
+                <div class="total-business-card ml-0">
+                    <div class="total-business-div">
+                      <div
+                        class="card-text"
+                        style="
+                          padding-top: 30px;
+                          font-size: 20px;
+                          vertical-align: middle;
+                          display: inline-block;
+                        "
+                      >
+                        Total Business
+                      </div>
+                      <div
+                        class="money-icon"
+                        style="
+                          padding-top: 30px;
+                          margin-left: 10px;
+                          vertical-align: middle;
+                          display: inline-block;
+                        "
+                      >
+                        <img
+                          src="https://img.icons8.com/fluent/25/000000/money-transfer.png"
+                        />
+                      </div>
+                    </div>
+                    <div class="money-div">₹10,000</div>
+                    <div class="radio-button-group">
+                        <label class="radio-label radio-inline">
+                          <input
+                            type="radio"
+                            name="business-radio"
+                            checked
+                          />
+                          Daily
+                        </label>
+                        <label class="radio-label radio-inline">
+                          <input
+                            type="radio"
+                            name="business-radio"
+                          />
+                          Weekly
+                        </label>
+                        <label class="radio-label radio-inline">
+                          <input
+                            type="radio"
+                            name="business-radio"
+                          />
+                          Monthly
+                        </label>
+                        <label class="radio-label radio-inline">
+                          <input
+                            type="radio"
+                            name="business-radio"
+                          />
+                          Yearly
+                        </label>
+                      </div>
+                    <div class="input-group mb-4" style="width: 90%;">
+                        <input class="form-control py-2 border-0 border" type="search" placeholder="search" id="search-input">
+                        <span class="input-group-append">
+                            <button class="btn border-0 px-2 py-1" style="background-color: rgb(231, 230, 230);">
+                                <img src="https://img.icons8.com/fluent-systems-filled/30/000000/search.png"/>
+                            </button>
+                          </span>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-lg-2">
+                <div class="business-from-trips">
+                    <p class="trips-text" style="font-size: 20px; padding-top: 30px;">From Trips</p>
+                    <p class="trips-digits money-div">251</p>
+                  </div>
+            </div>
+            <div class="col-lg-5" style="text-align: center;">
+                <img
+                    src="images/business-graph.png"
+                    alt="graph image"
+                    class="img-fluid"
+                    style="margin-top: 30px; max-height: 200px;"
+                />
+            </div>
+        </div>
+        <div class="table-div">
+            <table class="table table-striped business-table">
+                <thead>
+                  <tr>
+                    <th scope="col">Trip ID</th>
+                    <th scope="col">Pickup & Drop</th>
+                    <th scope="col">Kilometers</th>
+                    <th scope="col">Amount</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>ID123</td>
+                    <td>Surat <img src="https://img.icons8.com/ios-filled/25/000000/long-arrow-right.png"/> ahmedabad</td>
+                    <td>12</td>
+                    <td>₹1235</td>
+                  </tr>
+                  <tr>
+                    <td>ID943</td>
+                    <td>Surat <img src="https://img.icons8.com/ios-filled/25/000000/long-arrow-left.png"/> ahmedabad</td>
+                    <td>12</td>
+                    <td>₹1235</td>
+                  </tr>
+                  <tr>
+                    <td>ID555</td>
+                    <td>Surat <img src="https://img.icons8.com/ios-filled/25/000000/long-arrow-left.png"/> ahmedabad</td>
+                    <td>12</td>
+                    <td>₹1235</td>
+                  </tr>
+                  <tr>
+                    <td>ID123</td>
+                    <td>Surat <img src="https://img.icons8.com/ios-filled/25/000000/long-arrow-right.png"/> ahmedabad</td>
+                    <td>12</td>
+                    <td>₹1235</td>
+                  </tr>
+                  <tr>
+                    <td>ID123</td>
+                    <td>Surat <img src="https://img.icons8.com/ios-filled/25/000000/long-arrow-right.png"/> ahmedabad</td>
+                    <td>12</td>
+                    <td>₹1235</td>
+                  </tr>
+                  <tr>
+                    <td>ID123</td>
+                    <td>Surat <img src="https://img.icons8.com/ios-filled/25/000000/long-arrow-left.png"/> ahmedabad</td>
+                    <td>12</td>
+                    <td>₹1235</td>
+                  </tr>
+                  <tr>
+                    <td>ID123</td>
+                    <td>Surat <img src="https://img.icons8.com/ios-filled/25/000000/long-arrow-right.png"/> ahmedabad</td>
+                    <td>12</td>
+                    <td>₹1235</td>
+                  </tr>
+                </tbody>
+              </table>
+        </div>
+    </div>
+    <button class="save-report-button">
+        <img src="https://img.icons8.com/metro/40/ffffff/pdf.png"/> <br>Report
+    </button>
+  </body>
+</html>
