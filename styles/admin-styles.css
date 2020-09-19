@@ -8,6 +8,16 @@ body,html{
     display: inline-block;
 }
 
+a{
+    text-decoration: none;
+    color: white;
+}
+
+a:hover{
+    text-decoration: none;
+    color: white;
+}
+
 .btn-logout{
     background-color: rgb(252, 173, 54);
     border: 0;
