@@ -1,0 +1,377 @@
+body, html{
+    margin: 0;
+}
+
+.landing-page-header{
+    background-image: linear-gradient(to right, #202091, #64c2dc);
+    /* background-image: url('../images/hero\ section\ bg.svg'); */
+    background-size: cover;
+    background-position: center -30px;
+    /* height: 115vh; */
+    padding: 0;
+}
+
+.navbar{
+    padding: 0;
+}
+
+.navbar-light .navbar-nav .nav-link, a{
+    color: white;
+    margin: 10px;
+    transition-duration: 0.5s;
+    border-bottom: 2px solid transparent;
+    border-radius: 2px;
+}
+
+a{
+    margin: auto;
+}
+
+.navbar-light .navbar-nav .nav-link:hover, a:hover{
+    text-decoration: none;
+    color: white;
+    border-bottom: 2px solid white;
+    transition-duration: 0.5s;
+}
+
+.navbar-toggler{
+    border-radius: 25px;
+    padding: 10px;
+    background-color: white;
+    outline: none;
+}
+
+.navbar-toggler:focus{
+    outline:none;
+}
+
+.btn-create-account{
+    border: 0;
+    padding: 18px 36px;
+    background-color: rgb(252, 173, 54);
+}
+
+.main-heading{
+    font-weight: 900;
+    margin-top: 100px;
+    margin-bottom: 30px;
+    z-index: 2;
+}
+
+.try-free-btn{
+    border: 1px solid white;
+    background-color: white;
+    color: #202091;
+    border-radius: 5px;
+    padding: 8px 100px;
+    box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2), 0 6px 20px 0 rgba(255, 255, 255, 0.19);
+    font-size: large;
+    margin-bottom: 20px;
+    transition-duration: 0.5s;
+    z-index: 2;
+}
+
+.try-free-btn:hover{
+    transition-duration: 0.5s;
+    box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2), 0 10px 20px 0 rgba(255, 255, 255, 0.7);
+}
+
+.features-div{
+    padding: 50px;
+}
+
+.features-div>.container-fluid{
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0px 6px 20px 0px rgba(0, 0, 0, 0.19);
+}
+
+.stats-div{
+    padding: 0px 50px 50px 50px;
+}
+
+.stats-div>.container-fluid{
+    background-image: url('../images/stats\ background.svg');
+    background-position: center;
+    color: white;
+    border-radius: 15px;
+    padding: 80px 0;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0px 6px 20px 0px rgba(0, 0, 0, 0.19);
+}
+
+.feature, .feature-last{
+    padding: 10px;
+}
+
+.performance-analysis-div{
+    padding: 0px 60px;
+    color: white;
+    margin-bottom: 50px;
+}
+
+.performance-analysis-div>.container-fluid{
+    padding: 0;
+}
+
+.performance-text{
+    background-color: rgba(0, 108, 251,1);
+    background-image: url('../images/background-graph.svg');
+    background-position: left;
+    background-size: cover;
+    padding: 100px 20px;
+    margin: 50px 0;
+    border-radius: 15px 0 0 15px;
+    box-shadow: 0px 16px 20px 0px rgba(0, 0, 0, 0.2);
+}
+
+.compare-performance-text{
+    border-radius: 0 15px 15px 0;
+    background-position: right;
+}
+
+.display-4{
+    font-weight: 500;
+}
+
+.performance-graph-div{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0px 6px 20px 0px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+}
+
+.performance-graph-div>img{
+    padding: 50px;
+}
+
+.learn-vocab-div{
+    margin: 50px auto;
+    background-size: cover;
+    background-image: url('../images/learn\ vocab\ background.svg');
+}
+
+.learn-vocab-heading{
+    margin-bottom: 70px;
+}
+
+.learn-vocab-cards{
+    padding: 50px 50px 30px 50px;
+    margin: 0;
+}
+
+.card{
+    margin: 30px auto;
+    padding: 20px;
+    height: 300px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0px 6px 20px 0px rgba(0, 0, 0, 0.2);
+}
+
+.vocab-learning-btn{
+    padding: 18px 36px;
+    background-color: rgb(255, 82, 2);
+    border: 1px solid transparent;
+    font-size: x-large;
+    color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0px 6px 6px 0px rgba(0, 0, 0, 0.2);
+}
+
+.subscription-plans-div{
+    padding: 50px;
+}
+
+.subscriptions-plans-cards{
+    justify-content: space-evenly;
+}
+
+.subscription-small-plan-card, .subscription-big-plan-card{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0px 6px 20px 0px rgba(0, 0, 0, 0.1);
+    border: 0;
+    padding: 0;
+    height: auto;
+}
+
+.subscription-small-plan-card{
+    margin-top: 80px;
+}
+
+.subscription-small-plan-card>.card-body{
+    padding: 30px 20px 50px 20px;
+}
+
+.subscribe-btn{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    margin: 0;
+    background-color: rgba(0, 108, 251,1);
+    color: white;
+    border: 1px solid rgba(0, 108, 251,1);
+    border-radius: 0 0 10px 10px;
+    padding: 10px 20px;
+    font-weight: 400;
+    font-size: x-large;
+}
+
+.big-subscribe-btn{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0px 6px 20px 20px rgba(0, 0, 0, 0.1);
+    background-color: rgba(0, 128, 251,1);
+    border: 1px solid rgba(0, 128, 251,1);
+}
+
+.subscription-card-img-div{
+    position: absolute;
+    top: -30px;
+    width: 100%;
+}
+
+.subscription-big-plan-card{
+    background-color: rgba(0, 108, 251,1);
+    height: 450px;
+    width: 90%;
+}
+
+.subscription-card-img-div>div{
+    background-color: rgba(0, 108, 251,1);
+    padding: 15px 13px;
+    border-radius: 50%;
+    margin: auto;
+    width: 75px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0px 2px 6px 0px rgba(0, 0, 0, 0.1), 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0px 2px 6px 0px rgba(0, 0, 0, 0.1);
+}
+
+.subscription-big-card-img-div>div{
+    background-color: white;
+}
+
+.card-body>h3, .card-body>span{
+    color: rgba(0, 108, 251,1);
+}
+
+.big-card-body>h2, .big-card-body>span{
+    color: rgb(255, 187, 0);
+}
+
+.footer{
+    color: white;
+    background-color: rgba(0, 108, 251,1);
+    padding: 50px;
+    font-size: x-large;
+}
+
+@media screen and (min-width: 1800px){
+    .stats-div>.container-fluid{
+        background-size: cover;
+        background-size: 400% 400%;
+    }
+}
+
+@media screen and (max-width: 990px){
+    .landing-page-header{
+        background-position: center 0px;
+    }
+    
+    .navbar{
+        padding: .5rem 1rem;
+    }
+
+    .btn-create-account{
+        background-color: transparent;
+        padding: unset;
+        color: white;
+        margin: 10px;
+    }
+
+    .main-heading{
+        margin-top: 50px;
+        font-size: 4rem;
+    }
+
+    .performance-text{
+        border-radius: 15px 15px 0 0;
+        margin: auto;
+        padding: 30px 20px;
+    }
+
+    .performance-graph-div{
+        border-radius: 0 0 15px 15px;
+    }
+
+    .compare-performance-img-div{
+        border-radius: 15px 15px 0 0;
+    }
+
+    .compare-performance-text{
+        border-radius: 0 0 15px 15px;
+    }
+
+    .learn-vocab-div{
+        background-position: top;
+    }
+
+    .learn-vocab-heading{
+       margin-bottom: 0px;
+    }
+
+    .card{
+        height: 400px;
+    }
+
+    .subscription-small-plan-card{
+        margin-top: 50px;
+    } 
+
+    .subscription-big-plan-card{
+        height: 450px;
+    }
+}
+
+@media screen and (max-width:767px){
+    .features-div, .stats-div, .learn-vocab-cards, .subscription-plans-div{ 
+        padding: 20px;
+    }
+
+    .performance-analysis-div{
+        padding: 0 35px;
+    }
+
+    .feature{
+        border-bottom: 1px solid rgb(235, 225, 225);
+    }
+
+    .feature-last{
+        border-bottom: 0;
+    }
+
+    .display-4{
+        font-size: 2.6em;
+    }
+
+    .card{
+        height: auto;
+    }
+
+    .subscription-big-plan-card{
+        height: 450px;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:580px){
+    .stats-div>.container-fluid{
+        background-size: 810% 810%;
+    }
+}
+
+@media screen and (max-width:330px){
+    .display-4{
+        font-size: 2.3em;
+    }
+
+    .subscription-plans-heading{
+        font-size: 2.3em;
+    }
+
+    .footer{
+        padding: 50px 20px;
+    }
+}

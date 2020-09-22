@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="684" height="563" viewBox="0 0 684 563">
+  <g id="performance_graph" data-name="performance graph" transform="translate(-1071.5 -3214.5)">
+    <line id="Line_357" data-name="Line 357" y2="557" transform="translate(1156.5 3217.5)" fill="none" stroke="#1760c5" stroke-linecap="round" stroke-width="6"/>
+    <line id="Line_358" data-name="Line 358" x2="678" transform="translate(1074.5 3712.5)" fill="none" stroke="#1760c5" stroke-linecap="round" stroke-width="6"/>
+    <path id="Path_2151" data-name="Path 2151" d="M1194.892,3571.012l75.014-76.071,145.8,84.523,68.675-42.262,56,33.809,101.428-95.089,51.771-122.559v335.98H1194.892Z" fill="#bcd8ff"/>
+    <text id="Time" transform="translate(1664 3753)" fill="#1760c5" font-size="27" font-family="Roboto-Regular, Roboto"><tspan x="-30.316" y="0">Time</tspan></text>
+    <text id="Performance" transform="translate(1138.5 3295.5) rotate(-90)" fill="#1760c5" font-size="27" font-family="Roboto-Regular, Roboto"><tspan x="-78.133" y="0">Performance</tspan></text>
+  </g>
+</svg>
