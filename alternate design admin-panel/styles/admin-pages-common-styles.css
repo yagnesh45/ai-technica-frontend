@@ -1,0 +1,79 @@
+body{
+    background-color: rgb(220, 222, 255);
+}
+
+.div-main{
+    margin: 10px 30px;
+    background-color: white;
+    border-radius: 15px;
+}
+
+.main-card{
+    color: white;
+    background-image: linear-gradient(to right, rgb(37,44,227), #252CE3);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 10px 50px 0 rgba(0, 0, 0, 0.4);
+    padding: 0px 0px 30px 30px;
+    margin-top: 20px;
+    border:0;
+    border-radius: 15px;
+}
+
+.trips-card{
+    background-image: linear-gradient(to right,rgb(111,154,255), rgb(104,102,255));
+    justify-content: center;
+}
+
+.complaint-card{
+    background-image: linear-gradient(to right,rgb(241,29,64), rgb(198,35,42) );
+}
+
+.drivers-card{
+    background-image: linear-gradient(to right, rgb(2,172,175), rgb(0,198,172));
+}
+
+.table-div{
+    margin: 20px 50px;
+    overflow-x: auto;
+    font-size: 1.3em;
+}
+
+th{
+    color: rgb(37,44,227);
+}
+
+.save-report-button{
+    border: 0;
+    background-color: rgb(37,44,227);
+    color: white;
+    font-size: 0.7em;
+    padding: 10px 15px;
+    border-radius: 50%;
+    display: block;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+}
+
+.cancelled-trips-card{
+    border-right: 0;
+    border-left: 0;
+}
+
+.driver-details-card{
+    border-right: 0px;
+}
+
+@media screen and (max-width: 767px){
+    .table-div{
+        margin: 10px;
+        font-size: 1em;
+    }
+
+    .main-card{
+        padding: 0 0 20px 10px;
+    }
+
+    .container{
+        margin-top: 50px;
+    }
+}
