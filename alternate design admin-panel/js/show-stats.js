@@ -4,7 +4,8 @@ moneyContent = document.getElementsByClassName("money-daily");
 for (i = 0; i < moneyContent.length; i++) {
     moneyContent[i].style.display = "block";
 }
-function showMoney(evt, moneyID) {
+
+function showMoney(evt, moneyClassName) {
     var i, moneyContent, tripsContent, tabLinks, activeMoney;
 
     moneyContent = document.getElementsByClassName("money-div");
@@ -22,7 +23,7 @@ function showMoney(evt, moneyID) {
         tablinks[i].className = tablinks[i].className.replace(" active", " inactive");
     }
 
-    activeMoney = document.getElementsByClassName(moneyID);
+    activeMoney = document.getElementsByClassName(moneyClassName);
     for (i = 0; i < activeMoney.length; i++) {
         activeMoney[i].style.display = "block";
     }

@@ -34,12 +34,6 @@
       <button class="btn btn-link rounded-circle m-2" id="sidebarToggleTop" type="button"><i class="fas fa-bars text-light"></i></button>
     </div>
     <div class="container">
-    <div class="calendar-links text-center w-100">
-      <a href="#" class="daily-link calendar-link active shadow"> <i class="far fa-calendar text- mr-2"> </i>Daily </a>
-      <a href="#" class="weekly-link calendar-link shadow"> <i class="far fa-calendar text-primary mr-2"></i> Weekly </a>
-      <a href="#" class="monthly-link calendar-link shadow"> <i class="far fa-calendar text-primary mr-2"></i> Monthly </a>
-      <a href="#" class="yearly-link calendar-link shadow"> <i class="far fa-calendar text-primary mr-2"> </i>Yearly </a>
-    </div>
     <div class="drivers-div-main div-main">
         <div class="row main-card drivers-card">
             <div class="col-lg-9">
@@ -154,6 +148,12 @@
                 $(".sidebar").toggleClass("toggled");
             }
         });
+
+        showDefaultClasses = document.getElementsByClassName("money-div");
+        var i;
+        for(i=0;i < showDefaultClasses.length;i++){
+          showDefaultClasses[i].style.display = "block";
+        }
     </script>
   </body>
 </html>

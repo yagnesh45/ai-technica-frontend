@@ -34,12 +34,6 @@
       <button class="btn btn-link rounded-circle m-2" id="sidebarToggleTop" type="button"><i class="fas fa-bars text-light"></i></button>
     </div>
     <div class="container">
-    <div class="calendar-links text-center w-100">
-      <button onclick= "showMoney(event,'money-daily')" class="btn daily-link calendar-link active shadow"> <i class="far fa-calendar mr-2"> </i>Daily </button>
-      <button onclick= "showMoney(event,'money-weekly')" class="btn weekly-link calendar-link shadow"> <i class="far fa-calendar mr-2"></i> Weekly </button>
-      <button onclick= "showMoney(event,'money-monthly')" class="btn monthly-link calendar-link shadow"> <i class="far fa-calendar mr-2"></i> Monthly </button>
-      <button onclick= "showMoney(event,'money-yearly')" class="btn yearly-link calendar-link shadow"> <i class="far fa-calendar mr-2"> </i>Yearly </button>
-    </div>
 
     <div class="complaint-div-main div-main">
         <div class="row main-card complaint-card">
@@ -68,7 +62,7 @@
                       >
                       <img src="https://img.icons8.com/ios-filled/26/ffffff/complaint.png"/>
                       </div>
-                    </div>
+                    </div><br>
                     <div class="money-div">1422</div>
                   </div>
             </div>
@@ -126,7 +120,12 @@
                 $(".sidebar").toggleClass("toggled");
             }
         });
+
+        showDefaultClasses = document.getElementsByClassName("money-div");
+        var i;
+        for(i=0;i < showDefaultClasses.length;i++){
+          showDefaultClasses[i].style.display = "block";
+        }
     </script>
-    <script src="js/show-stats.js"></script>
   </body>
 </html>

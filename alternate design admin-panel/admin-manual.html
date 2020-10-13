@@ -1,0 +1,290 @@
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Recursive:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@700&amp;display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/c23cb657cb.js" crossorigin="anonymous"></script><link href="https://kit-free.fontawesome.com/releases/latest/css/free-v4-shims.min.css" media="all" rel="stylesheet"><link href="https://kit-free.fontawesome.com/releases/latest/css/free-v4-font-face.min.css" media="all" rel="stylesheet"><link href="https://kit-free.fontawesome.com/releases/latest/css/free.min.css" media="all" rel="stylesheet">
+    <link rel="stylesheet" href="styles/admin-styles.css">
+    <link rel="stylesheet" href="styles/admin-home-styles.css">
+    <title>CabbyMy</title>
+            <link rel="icon" href="/static/assets/yellowlogo.svg" type="image/x-icon">
+            <style>.dispDate {
+                background-color: rgb(223, 219, 219);
+                border-radius: 10px;
+                text-align: center;
+            }
+            .tripcard {
+                border: 1px solid #dbd8d8;
+                border-radius: 10px;
+                margin-right: 10px;
+            }
+            
+            .modal_try {
+                background-color: #ffffff;
+            }
+            
+            .back-button{
+                border: 0;
+                color: white;
+                font-size: 0.7em;
+                padding: 10px 15px;
+                border-radius: 50%;
+                display: block;
+                position: fixed;
+                right: 10px;
+                bottom: 20px;
+            }
+            .col-12, .col-lg-6{
+            padding-left: 1em;
+            padding-right:1em;
+            }
+            </style>
+
+</head>
+<body cz-shortcut-listen="true">
+<div id="wrapper" class="text-dark">
+        <nav class="navbar navbar-dark align-items-start sidebar sidebar-dark accordion bg-light p-0">
+            <div class="container-fluid d-flex flex-column p-0">
+                <button class="btn btn-link d-md-none rounded-circle mt-3 text-dark" id="sidebarToggleTop" type="button"><i class="fa fa-times-circle"></i></button>
+                <span class="d-flex justify-content-center align-items-center sidebar-brand m-0 py-4" href="#">
+                    <div class="sidebar-brand-text mx-auto text-dark"><span>admin1@gmail.com</span></div>
+                </span>
+                <ul class="nav navbar-nav" id="accordionSidebar">
+                    <li class="nav-item" role="presentation"><a class="nav-link text-dark active" href="#"><i class="icon far fa-address-card text-light ml-1 mr-2" style="font-size: 1.2em;" aria-hidden="true"></i><span>Overview</span></a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link text-dark" href="#"><i class="fas fa-user-plus text-muted ml-1 mr-2" style="font-size: 1.2em;" aria-hidden="true"></i><span>Manage Moderators</span></a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link text-dark" href="#"><i class="fas fa-globe-americas text-muted ml-1 mr-2" style="font-size: 1.2em;" aria-hidden="true"></i><span>Add State</span></a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link text-dark" href="#"><i class="fas fa-exclamation-circle text-muted ml-1 mr-2" style="font-size: 1.2em;" aria-hidden="true"></i><span>Complaints</span></a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link text-dark mb-2" href="#"><i class="fas fa-male text-muted ml-2 mr-3" style="font-size: 1.2em;" aria-hidden="true"></i><span>Manual</span></a></li>
+                    <div class="hr my-0">
+                    <li class="nav-item" role="presentation"><a class="nav-link text-dark" href="#"><i class="fa fa-help text-muted mx-2" style="font-size: 1.2em;" aria-hidden="true"></i><span>Help</span></a></li>
+                </div></ul>
+                <button class="btn btn-dark text-light w-100 logout-btn">Logout</button>
+            </div>
+        </nav>
+        <div class="nav-div shadow d-md-none">
+            <button class="btn btn-link rounded-circle m-2" id="sidebarToggleTop" type="button"><i class="fas fa-bars text-light" aria-hidden="true"></i></button>
+            <br>
+        </div>
+
+ <div class="container">
+        <h3 class="mt-5" style="text-align: center;">Handle Rides Manually</h3>
+        <div class="card border-0">
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-12 col-lg-6">
+                        <div class="row tripcard mt-3" data-toggle="modal" data-target="#ManualRidesModal0">
+                            <div class="col-7 col-md-8 col-xl-9">
+                                <h5 class="mt-2">abcde</h5>
+                                <p> 11 Oct 2020</p>
+
+                                <div class="row">
+
+                                    <div class="col-12 col-sm-8">
+                                        <p>
+                                            <img src="/static/images/Icon%20material-my-location.svg">  Anand,Gujarat,India <br>
+                                            <img src="/static/images/Icon%20material-location-on.svg">  Bharuch,Gujarat,India
+                                        </p>
+                                    </div>
+
+                                    <div class="col-12 col-sm-4 mb-2 mb-md-0 d-lg-flex justify-content-lg-end">
+                                        <p class="card-text" style="color: #59CBB8;">  17:55</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-5 col-md-4 col-xl-3 dispDate">
+                                    <p class="mt-5"><i class="fas fa-rupee-sign" aria-hidden="true"></i>   2460.0</p>
+                                    <p style="font-size: 12px;"> Click for details</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+         <button class="btn btn-dark back-button" onclick="back()">
+          <i class="far fa-arrow-alt-circle-left" style="font-size: 2.5rem;" aria-hidden="true"></i>
+          <br>Back
+        </button>
+
+    </div>
+   
+
+
+
+
+
+ <!-- Modal -->
+<div class="modal fade" id="ManualRidesModal0" tabindex="-1" aria-labelledby="ManualRidesModal0Label" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 class="modal-title" id="ManualRidesModal0Label">Handle Rides Manually</h3>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">×</span>
+          </button>
+        </div>
+        <div class="modal-body">
+
+            <h3 class="card-title mt-4 ml-3" style="font-weight: bold;">  Customer Info</h3>
+
+            <div class="card-body">
+                <div class="row">
+
+                <div class="col-12 col-sm-7 mt-1 d-flex justify-content-sm-start">
+                    <h4 class="d-inline card-title mr-3"><img src="/static/images/Icon%20ionic-ios-person.svg">  abcde</h4>
+                </div>
+                                    <div class="col-12 col-sm-5 mt-2 d-flex justify-content-sm-end">
+                                        <h5 class="d-inline card-title">11 Oct 2020</h5>
+                                    </div>
+                </div>
+
+                <div class="row mt-4">
+                                    <div class="col-8">
+                                        <p class="card-text"><img src="/static/images/Icon%20material-my-location.svg">  Anand,Gujarat,India</p>
+                                    </div>
+                                    <div class="col-4 d-flex justify-content-end">
+                                        <p class="card-text" style="color: #59CBB8;">  17:55</p>
+                                    </div>
+                          </div>
+
+                <div class="row mt-4">
+                    <div class="col-8">
+                        <p class="card-text"><img src="/static/images/Icon%20material-location-on.svg"> Bharuch,Gujarat,India</p>
+                    </div>
+                </div>
+
+                <div class="row mt-4">
+                    <div class="col-5">
+                        <p class="card-text"><img src="/static/images/Icon%20awesome-car-alt.svg">  Sedan</p>
+                    </div>
+                    <div class="col-7">
+                        <p class="card-text"><img src="/static/images/Icon%20awesome-suitcase-rolling.svg"> Small Bags:1, Big Bags:4</p>
+                    </div>
+                </div>
+
+                <div class="row mt-5">
+                    <div class="col-12">
+                        <h6 class="card-text" style="font-weight: bold; color:#FFCB39">Special Request:</h6>
+                        <p class="card-text" style="color: #59CBB8;">
+                            
+                                 Extra Luggage  Delicate Luggage Traveling with Kids Traveling with Elderly / Disabled Pregnant Lady Onboard 
+                            
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+        <div class="modal-footer">
+            <textarea style="display:none;" id="tripinfo0" readonly="">tripID:111020920082680
+wayType : OneWay
+cab : Sedan
+distance : 82
+pickup : Anand,Gujarat,India
+detPickup : TF Road, Rajodpura, Anand, Gujarat, India
+drop : Bharuch,Gujarat,India
+detDrop : Bharuch, Gujarat, India
+dropdate : Not Defined
+pickuptime : 17:55
+pickupdate : 11 Oct 2020
+email  : sonarkeyur@gmail.com
+phone : +917575070747
+customername : abcde
+noofPassenger : 1
+special : Extra Luggage  Delicate Luggage Traveling with Kids Traveling with Elderly / Disabled Pregnant Lady Onboard 
+smallBags : 1
+bigBags : 4
+price : 2460.0
+payMethod : cod
+remainingPay : 2460.0
+</textarea>
+          <button type="button" id="0" class="btn btn-danger col-12" onclick="copy2(this)">Copy Trip Details</button>
+          <button type="button" id="21nYFa5BqTbFjunxdFnA" class="btn btn-danger col-12" onclick="handle_unsuccessful(this)">Delete (Cannot Handle)</button>
+          <button type="button" id="21nYFa5BqTbFjunxdFnA" class="btn btn-success col-12" onclick="Handle_successful(this)">Handle_successful</button>
+        </div>
+      </div>
+    </div>
+</div>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.bundle.min.js"></script>
+    <script src="js/bs-init.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.js"></script>
+    <script src="js/theme.js"></script>
+    <script>
+        $( document ).ready(function() {
+            if ($(window).width() < 768) {
+                $(".sidebar").toggleClass("toggled");
+            }
+        });
+    </script>
+    <script>
+
+        function signout(){
+            document.location.href="/logout";
+        }
+
+         function back(){
+            document.location.href="/";
+        }
+
+
+
+        function handle_unsuccessful(btn){
+            document.location.href="/handle_unsuccessful/" + btn.id;
+        }
+         function Handle_successful(btn){
+            document.location.href="/handle_successful/" + btn.id;
+        }
+
+        // function copy(btn) {
+        //   /* Get the text field */
+        //   var copyText = document.getElementById("tripinfo"+btn.id);
+
+        //   /* Select the text field */
+        //   copyText.select();
+        //   copyText.setSelectionRange(0, 99999); /*For mobile devices*/
+
+        //   /* Copy the text inside the text field */
+        //   document.execCommand("copy");
+
+        //   /* Alert the copied text */
+        //   alert("Copied the text: " + copyText.value);
+        // }
+
+      function copy2(btn){
+          var id = '#tripinfo'+btn.id
+            var copyTextarea = document.querySelector(id);
+            $(id).show()
+          copyTextarea.focus();
+          copyTextarea.select();
+        //
+
+          try {
+            var successful = document.execCommand('copy');
+            var msg = successful ? 'successful' : 'unsuccessful';
+            console.log('Copying text command was ' + msg);
+            $(id).hide();
+          } catch (err) {
+            console.log('Oops, unable to copy');
+            $(id).hide();
+          }
+      }
+    </script>
+
+
+
+</div></body></html>
