@@ -1,7 +1,9 @@
 .navbar{
     border-radius: 0 15px 15px 0;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 30px 0 rgba(0, 0, 0, 0.2);
-    margin-right: 20px;
+    position: relative;
+    z-index: 2;
+    transition-duration: 0.5s;
 }
 
 .hr{
@@ -29,8 +31,12 @@
     background-color: rgb(22, 22, 22);
 }
 
+.container-fluid{
+    margin-top: 0;
+}
+
 .calendar-links{
-    margin-top: 30px;
+    margin-top: 10px;
 }
 
 .calendar-link{
@@ -79,3 +85,89 @@
     font-size: 2.1em;
     font-weight: 700;
 }
+
+a:hover{
+    text-decoration: none;
+    color: rgb(81, 126, 250);
+}
+
+.navigational-links a{
+    text-decoration: none;
+}
+
+.navigational-links a:hover{
+    text-decoration: none;
+    color: white;
+}
+
+@media screen and (max-width: 768px){
+    .logout-btn{
+        position: static;
+        border-radius: 0;
+    }
+
+    .container-fluid{
+        margin-top: 6em;
+    }
+
+    .navbar .container-fluid{
+        margin-top: 0;
+    }
+
+    .trips-digits, .money-div{
+        font-size: 1.5em;
+    }
+}
+
+@media screen and (max-width: 767px){
+    .navbar{
+        position: fixed;
+        left: 0;
+        z-index: 3;
+    }
+
+    .sidebar .sidebar-brand{
+        display: none;
+        height: 0;
+        padding: 0;
+    }
+
+    .nav-div{
+        position: fixed;
+        z-index: 2;
+        width: 100%;
+        background-color: rgb(81, 126, 250);
+        border-radius: 0 0 20px 20px;
+    }
+
+    .navigate-overview{
+        border-radius: 0 20px;
+        padding: 5px 0;
+        color: white;
+    }
+
+    .navigate-trip, .navigate-driver{
+        color: white;
+        background-color: transparent;
+    }
+
+    .navigate-trip{
+        border-radius: 20px 20px 0 0;
+    }
+
+    .navigate-driver{
+        border-radius: 20px 0;
+    }
+
+    .nav-div .active{
+        color: black;
+        background-color: white;
+    }
+
+    .calendar-link{
+        padding: 5px 10px;
+        margin: 2px;
+        font-size: 0.8em;
+    }
+}
+
