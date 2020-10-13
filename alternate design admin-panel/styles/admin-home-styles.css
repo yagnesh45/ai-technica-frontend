@@ -1,0 +1,81 @@
+.navbar{
+    border-radius: 0 15px 15px 0;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 30px 0 rgba(0, 0, 0, 0.2);
+    margin-right: 20px;
+}
+
+.hr{
+   border-top: 1px solid rgba(0,0,0,.1);
+   width: 100%;
+}
+
+.nav-item>.nav-link>span{
+    font-size: 1.3em;
+}
+
+.nav-item>.active{
+    background-color: rgb(81, 126, 250);
+}
+
+.nav-item>.active>span{
+    color: white;
+}
+
+.logout-btn{
+    position: absolute;
+    bottom: 0;
+    border-radius: 0 0 15px 0;
+    padding: 15px 0;
+    background-color: rgb(22, 22, 22);
+}
+
+.calendar-links{
+    margin-top: 30px;
+}
+
+.calendar-link{
+    padding: 10px 15px;
+    margin: 10px;
+    border-radius: 10px;
+    color: rgb(43, 99, 255);
+    background-color: white;
+    display: inline-block;
+}
+
+.calendar-links>.active{
+    background-color:rgb(81, 126, 250);
+    color: white;
+}
+
+.overview-div{
+    margin-top: 50px;
+}
+
+.card{
+    padding-left: 10px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.complaints-card{
+    background-color: rgb(253, 36, 36);
+    font-weight: bold;
+    padding-left: 20px;
+}
+
+.trip-card,.driver-card{
+    margin: -0.4em;
+    margin-top: 1em;
+}
+
+.from-trips{
+    float: right;
+    background-color: rgb(81, 126, 250);
+    color: white;
+    border-radius: 0 10px 10px 10px;
+}
+
+.trips-digits, .money-div{
+    font-size: 2.1em;
+    font-weight: 700;
+}
