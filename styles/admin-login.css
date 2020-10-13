@@ -1,0 +1,106 @@
+body, html{
+    margin: 0;
+}
+
+.bg1{
+    background-image: url("../images/background.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: scroll;
+    background-size: cover;
+    justify-content: center;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+@media screen and (max-width: 767px){
+    .bg1{
+        background-image: url("../images/background-mobile.svg");
+        height: auto;
+    }
+}
+
+.iconplace{
+    font-family: fontawesome;
+}
+
+.login-form{
+    font-family: 'Poppins', sans-serif;
+}
+
+.input-container{
+    display: flex;
+    width: 100%;
+}
+
+.text-warning input::-webkit-input-placeholder{
+    color: #FFC107;
+}
+
+.text-warning input::-moz-placeholder{
+    color: #FFC107;
+}
+
+.text-warning input::-ms-input-placeholder{
+    color: #FFC107;
+}
+
+.text-warning::placeholder{
+    color: #FFC107;
+}
+
+
+.text-dark input::-webkit-input-placeholder{
+    color: #343A40;
+}
+
+.text-dark input::-moz-placeholder{
+    color: #343A40;
+}
+
+.text-dark input::-ms-input-placeholder{
+    color: #343A40;
+}
+
+.text-dark::placeholder{
+    color: #343A40;
+}
+
+
+#welcome{
+    color: #FFC107;
+}
+
+@media(min-width:768px) and (max-width:1019px){
+    #welcome{
+        font-size: 3rem;
+        color: #ffffff;
+    }
+}
+
+@media(min-width:300px) and (max-width:444px){
+    #welcome{
+        font-size: 2.5rem;
+        color: #ffffff;
+    }
+}
+
+@media(min-width:180px) and (max-width:299px){
+    #welcome{
+        font-size: 2rem;
+        color: #ffffff;
+    }
+}
+
+@media(min-width:0px) and (max-width:179px){
+    #welcome{
+        font-size: 1rem;
+        color: #ffffff;
+    }
+}
+
+#username{   
+    color: #FFC107;
+}
+

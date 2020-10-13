@@ -1,0 +1,27 @@
+<svg id="background-mobile" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="418" height="736" viewBox="0 0 418 736">
+  <defs>
+    <linearGradient id="linear-gradient" y1="0.035" x2="1.01" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#49bdaa"/>
+      <stop offset="1" stop-color="#05967d"/>
+    </linearGradient>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_90" data-name="Rectangle 90" width="418" height="736" transform="translate(0 -119)" fill="#fff" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+    <linearGradient id="linear-gradient-2" x1="0.197" y1="0.805" x2="0.612" y2="0.22" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#ffb300"/>
+      <stop offset="1" stop-color="#e49120"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-3" x1="0.565" y1="0.503" x2="0.1" y2="0.04" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#ffb300"/>
+      <stop offset="1" stop-color="#ff425c"/>
+    </linearGradient>
+  </defs>
+  <g id="Path_1331" data-name="Path 1331" fill="url(#linear-gradient)">
+    <path d="M 413.5 735.5 L 0.5 735.5 L 0.5 0.5 L 413.5 0.5 L 413.5 735.5 Z" stroke="none"/>
+    <path d="M 1 1 L 1 735 L 413 735 L 413 1 L 1 1 M 0 0 L 414 0 L 414 736 L 0 736 L 0 0 Z" stroke="none" fill="#707070"/>
+  </g>
+  <g id="Mask_Group_4" data-name="Mask Group 4" transform="translate(0 119)" clip-path="url(#clip-path)">
+    <path id="wave_6_" data-name="wave (6)" d="M0,503.958l26.433-42.2c26.433-42.2,79.3-126.612,108.947-122.206,29.772,3.93,36.015,97.861,57.488,133.535s57.555,15.468,105.541-50.273c47.8-65.028,107.5-175.592,145.358-202.575,38.04-27.7,54.229,28.19,85.649,25.818s77.448-60.623,113.84-82.018,62.528-3.555,85.648,25.818c22.934,30.086,42.853,71.7,52.595,93.346l9.866,21.166L870.938,0,854.451,4.158,772.017,24.949,673.1,49.9,574.175,74.847,475.255,99.8l-98.921,24.949-98.921,24.949-98.921,24.949L96.058,195.434l-16.487,4.158Z" transform="translate(121.094 -557.465) rotate(43)" fill="url(#linear-gradient-2)"/>
+    <path id="wave_6_2" data-name="wave (6)" d="M0,414.364l21.446-32.638c21.446-32.637,64.339-97.912,91.077-94.3,26.825,3.24,37.278,76.287,58.329,104.149s52.265,12.382,91.763-38.415c39.368-50.244,87.018-135.806,119.466-156.542,32.577-21.289,49.951,22.249,77.922,20.6s66.106-46.635,97.537-63.036,55.725-2.372,77.922,20.6c22.067,23.528,42.036,56,51.869,72.882l9.92,16.513L752.613,28.109l-14.526,3.129-72.63,15.644L578.3,65.656,491.144,84.429,403.988,103.2c-29.052,6.258-64.358-51.669-93.411-45.412-25.449,5.482-4.772-72.975-29.208-55.15-3.257,2.377-40.918,18.53-44.521,19.306C207.8,28.2,171.571,153.264,142.519,159.522l-72.63,15.644L55.363,178.3Z" transform="translate(59.274 859.854) rotate(-120)" fill="url(#linear-gradient-3)"/>
+  </g>
+</svg>
