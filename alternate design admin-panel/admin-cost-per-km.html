@@ -2,35 +2,40 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0, user-scalable=no"
-    />
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap"
-      rel="stylesheet"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i">
+    <link rel="stylesheet" href="styles/admin-pages-common-styles.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
+    <link rel="stylesheet" href="styles/admin-home-styles.css">
     <link rel="stylesheet" href="styles/admin-cost-per-km-styles.css"/>
-    <style>
-      
-    </style>
-    <title>Cost per KM</title>
+    <title>Admin Portal Page 2</title>
   </head>
   <body>
-    <header class="admin-header">
-      <div class="header-div text-right">
-        <span>
-          <span class="user-name-p">admin1@gmail.com</span>
-          <button class="btn-logout">Logout</button>
-        </span>
+    <div id="wrapper">
+    <nav class="navbar navbar-dark align-items-start sidebar sidebar-dark accordion bg-light p-0">
+      <div class="container-fluid d-flex flex-column p-0">
+          <button class="btn btn-link d-md-none rounded-circle mt-3 text-dark" id="sidebarToggleTop" type="button"><i class="fa fa-times-circle"></i></button>
+          <span class="d-flex justify-content-center align-items-center sidebar-brand m-0 py-4" href="#">
+              <div class="sidebar-brand-text mx-auto text-dark text-lowercase"><span>admin1@gmail.com</span></div>
+          </span>
+          <ul class="nav navbar-nav" id="accordionSidebar">
+              <li class="nav-item" role="presentation"><a class="nav-link text-dark active" href="#"><i class="icon far fa-address-card text-light ml-1 mr-2" style="font-size: 1.2em;"></i><span>Overview</span></a></li>
+              <li class="nav-item" role="presentation"><a class="nav-link text-dark" href="#"><i class="fas fa-user-plus text-muted ml-1 mr-2" style="font-size: 1.2em;"></i><span>Manage Moderators</span></a></li>
+              <li class="nav-item" role="presentation"><a class="nav-link text-dark" href="#"><i class="fas fa-globe-americas text-muted ml-1 mr-2" style="font-size: 1.2em;"></i><span>Add State</span></a></li>
+              <li class="nav-item" role="presentation"><a class="nav-link text-dark" href="#"><i class="fas fa-exclamation-circle text-muted ml-1 mr-2" style="font-size: 1.2em;"></i><span>Complaints</span></a></li>
+              <li class="nav-item" role="presentation"><a class="nav-link text-dark mb-2" href="#"><i class="fas fa-male text-muted mx-2 mr-3" style="font-size: 1.2em;"></i><span>Manual</span></a></li>
+              <div class="hr my-0">
+              <li class="nav-item" role="presentation"><a class="nav-link text-dark" href="#"><i class="fa fa-help text-muted mx-2" style="font-size: 1.2em;"></i><span>Help</span></a></li>
+          </ul>
+          <button class="btn btn-dark text-light w-100 logout-btn">Logout</button>
       </div>
-    </header>
-
-    <div class="cars-div container mt-5">
+    </nav>
+    <div class="nav-div shadow d-md-none">
+      <button class="btn btn-link rounded-circle m-2" id="sidebarToggleTop" type="button"><i class="fas fa-bars text-light"></i></button>
+    </div>
+    <div class="container">
+    <div class="cars-div mt-5">
       <div class="row">
         <button class="btn col-6 cars-tab one-way active" onclick="openCostOption(event, 'one-way-div')" href=""
         id="one-way"> Oneway </a>
@@ -245,6 +250,21 @@
       </div>
     </div>
   </div>
+</div>
+</div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.bundle.min.js"></script>
+    <script src="js/bs-init.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.js"></script>
+    <script src="js/theme.js"></script>
+    <script>
+        $( document ).ready(function() {
+            if ($(window).width() < 768) {
+                $(".sidebar").toggleClass("toggled");
+            }
+        });
+    </script>
   
   <script>
     function openCostOption(evt, tabName) {

@@ -13,15 +13,8 @@ body {
   background-size: contain;
 }
 
-.header-div {
-  width: 100%;
-  background-color: rgb(56, 118, 249);
-  display: inline-block;
-}
-
-.user-name-p {
-  color: white;
-  margin-right: 20px;
+.card{
+  padding-left: 0;
 }
 
 .cars-div {
@@ -132,6 +125,7 @@ input[type="number"] {
   border-radius: 0 0 10px 10px;
   background-color: rgb(255, 153, 0);
   font-size: large;
+  color: black;
 }
 
 input:focus {

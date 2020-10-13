@@ -3,29 +3,45 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-    />
-    <link rel="stylesheet" href="styles/admin-styles.css" />
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i">
     <link rel="stylesheet" href="styles/admin-pages-common-styles.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap"
-      rel="stylesheet"
-    />
-    <title>Admin Portal Page 4</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
+    <link rel="stylesheet" href="styles/admin-home-styles.css">
+    <title>Admin Portal Page 2</title>
   </head>
-  <body style="background-color: rgb(255, 231, 231);">
-    <header class="admin-header">
-      <div class="header-div complaint-header-div text-right">
-        <span>
-          <span class="user-name-p">Dharam Lokhandvala</span>
-          <button class="btn-logout">Logout</button>
-        </span>
+  <body>
+    <div id="wrapper">
+    <nav class="navbar navbar-dark align-items-start sidebar sidebar-dark accordion bg-light p-0">
+      <div class="container-fluid d-flex flex-column p-0">
+          <button class="btn btn-link d-md-none rounded-circle mt-3 text-dark" id="sidebarToggleTop" type="button"><i class="fa fa-times-circle"></i></button>
+          <span class="d-flex justify-content-center align-items-center sidebar-brand m-0 py-4" href="#">
+              <div class="sidebar-brand-text mx-auto text-dark"><span>admin1@gmail.com</span></div>
+          </span>
+          <ul class="nav navbar-nav" id="accordionSidebar">
+              <li class="nav-item" role="presentation"><a class="nav-link text-dark active" href="#"><i class="icon far fa-address-card text-light ml-1 mr-2" style="font-size: 1.2em;"></i><span>Overview</span></a></li>
+              <li class="nav-item" role="presentation"><a class="nav-link text-dark" href="#"><i class="fas fa-user-plus text-muted ml-1 mr-2" style="font-size: 1.2em;"></i><span>Manage Moderators</span></a></li>
+              <li class="nav-item" role="presentation"><a class="nav-link text-dark" href="#"><i class="fas fa-globe-americas text-muted ml-1 mr-2" style="font-size: 1.2em;"></i><span>Add State</span></a></li>
+              <li class="nav-item" role="presentation"><a class="nav-link text-dark" href="#"><i class="fas fa-exclamation-circle text-muted ml-1 mr-2" style="font-size: 1.2em;"></i><span>Complaints</span></a></li>
+              <li class="nav-item" role="presentation"><a class="nav-link text-dark mb-2" href="#"><i class="fas fa-male text-muted ml-2 mr-3" style="font-size: 1.2em;"></i><span>Manual</span></a></li>
+              <div class="hr my-0">
+              <li class="nav-item" role="presentation"><a class="nav-link text-dark" href="#"><i class="fa fa-help text-muted mx-2" style="font-size: 1.2em;"></i><span>Help</span></a></li>
+          </ul>
+          <button class="btn btn-dark text-light w-100 logout-btn">Logout</button>
       </div>
-    </header>
+    </nav>
+    <div class="nav-div shadow d-md-none">
+      <button class="btn btn-link rounded-circle m-2" id="sidebarToggleTop" type="button"><i class="fas fa-bars text-light"></i></button>
+    </div>
+    <div class="container">
+    <div class="calendar-links text-center w-100">
+      <a href="#" class="daily-link calendar-link active shadow"> <i class="far fa-calendar text- mr-2"> </i>Daily </a>
+      <a href="#" class="weekly-link calendar-link shadow"> <i class="far fa-calendar text-primary mr-2"></i> Weekly </a>
+      <a href="#" class="monthly-link calendar-link shadow"> <i class="far fa-calendar text-primary mr-2"></i> Monthly </a>
+      <a href="#" class="yearly-link calendar-link shadow"> <i class="far fa-calendar text-primary mr-2"> </i>Yearly </a>
+    </div>
 
-    <div class="container-fluid complaint-div-main div-main">
+    <div class="complaint-div-main div-main">
         <div class="row main-card complaint-card">
             <div class="col-lg-4">
                 <div class="total-complaint-card ml-0">
@@ -54,16 +70,6 @@
                       </div>
                     </div>
                     <div class="money-div">1422</div>
-                    <br>
-                    <br><br>
-                    <div class="input-group mb-4" style="width: 90%;">
-                        <input class="form-control py-2 border-0 border" type="search" placeholder="search" id="search-input">
-                        <span class="input-group-append">
-                            <button class="btn border-0 px-2 py-1" style="background-color: rgb(231, 230, 230);">
-                                <img src="https://img.icons8.com/fluent-systems-filled/30/000000/search.png"/>
-                            </button>
-                          </span>
-                    </div>
                   </div>
             </div>
             <div class="col-lg-2">
@@ -73,12 +79,8 @@
                   </div>
             </div>
             <div class="col-lg-5" style="text-align: center;">
-                <img
-                    src="images/complains-graph.png"
-                    alt="graph image"
-                    class="img-fluid"
-                    style="margin-top: 30px; max-height: 200px;"
-                /><br><br>
+                <!-- Graph here  -->
+              <br><br>
                 <span class="complaint-graph-text">
                     <span style="color: rgb(255, 252, 95); margin-right: 20px; font-size: 20px;">By Customer: 1200</span><br>
                     <span style="color: rgb(1, 247, 255); font-size: 20px;">By Drivers: 222 </span>
@@ -105,32 +107,25 @@
                       <td>User1</td>
                       <td>9876543210</td>
                     </tr>
-                    <tr>
-                      <td>ID555</td>
-                      <td>User2</td>
-                      <td>9876543210</td>
-                    </tr>
-                    <tr>
-                      <td>ID123</td>
-                      <td>User1</td>
-                      <td>9876543210</td>
-                    </tr>
-                    <tr>
-                      <td>ID345</td>
-                      <td>User3</td>
-                      <td>345346610</td>
-                    </tr>
-                    <tr>
-                      <td>ID293</td>
-                      <td>User9</td>
-                      <td>9876543210</td>
-                    </tr>
                   </tbody>
               </table>
         </div>
     </div>
-    <button class="save-report-button">
-        <img src="https://img.icons8.com/metro/40/ffffff/pdf.png"/> <br>Report
-    </button>
+  </div>
+</div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.bundle.min.js"></script>
+    <script src="js/bs-init.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.js"></script>
+    <script src="js/theme.js"></script>
+    <script>
+        $( document ).ready(function() {
+            if ($(window).width() < 768) {
+                $(".sidebar").toggleClass("toggled");
+            }
+        });
+    </script>
   </body>
 </html>
