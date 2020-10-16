@@ -14,13 +14,15 @@ function showMoney(evt, moneyClassName) {
     }
 
     tripsContent = document.getElementsByClassName("trips-digits");
-    for (i = 0; i < moneyContent.length; i++) {
-        tripsContent[i].style.display = "none";
+    if(tripsContent.length!=0){
+        for (i = 0; i < tripsContent.length; i++) {
+            tripsContent[i].style.display = "none";
+        }
     }
 
-    tablinks = document.getElementsByClassName("calendar-link");
-    for (i = 0; i < tablinks.length; i++) {
-        tablinks[i].className = tablinks[i].className.replace(" active", " inactive");
+    tabLinks = document.getElementsByClassName("calendar-link");
+    for (i = 0; i < tabLinks.length; i++) {
+        tabLinks[i].className = tabLinks[i].className.replace(" active", " inactive");
     }
 
     activeMoney = document.getElementsByClassName(moneyClassName);

@@ -4,6 +4,7 @@
     position: relative;
     z-index: 2;
     transition-duration: 0.5s;
+    height: 100vh;
 }
 
 .hr{
@@ -69,17 +70,18 @@
     padding-left: 10px;
     border-radius: 10px;
     margin-bottom: 20px;
+    height: 90%;
 }
 
 .complaints-card{
     background-color: rgb(253, 36, 36);
     font-weight: bold;
-    padding-left: 20px;
 }
 
 .trip-card,.driver-card{
     margin: -0.4em;
     margin-top: 1em;
+    height: 90%;
 }
 
 .from-trips{
@@ -95,6 +97,10 @@
     display: none;
 }
 
+h2{
+    font-size: 1.5em;
+}
+
 a:hover{
     text-decoration: none;
     color: rgb(81, 126, 250);
@@ -107,6 +113,16 @@ a:hover{
 .navigational-links a:hover{
     text-decoration: none;
     color: white;
+}
+
+@media screen and (min-width: 992px) and (max-width:1100px){
+    .trips-digits, .money-div{
+        font-size: 1.8em;
+    }
+
+    p{
+        font-size: 0.8em;
+    }
 }
 
 @media screen and (max-width: 768px){
